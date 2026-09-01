@@ -1,6 +1,6 @@
 # Industrial Machine Intelligence & Predictive Maintenance
 
-## Project Overview
+##  Project Overview
 
 This project focuses on developing an intelligent predictive maintenance system for industrial turbofan engines using Machine Learning and Data Analytics.
 
@@ -8,7 +8,7 @@ The system analyzes engine sensor data to monitor machine health, detect abnorma
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 **NASA C-MAPSS-1 Turbofan Engine Degradation Dataset**
 
@@ -20,11 +20,11 @@ The dataset contains run-to-failure sensor measurements from turbofan engines un
 - Operating Cycle
 - Operating Settings
 - Multiple Sensor Measurements
-- Engine degradation information
+- Engine Degradation Information
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Monitor industrial machine health
 - Analyze sensor behavior
@@ -44,9 +44,14 @@ The dataset contains run-to-failure sensor measurements from turbofan engines un
 
 ## 1. Data Engineering & Preprocessing
 
+This module prepares the raw NASA C-MAPSS dataset for machine learning.
+
+### Tasks
+
 - Load NASA C-MAPSS dataset
 - Data cleaning
 - Missing-value handling
+- Duplicate checking
 - Feature selection
 - Data transformation
 - Normalization / scaling
@@ -56,20 +61,23 @@ The dataset contains run-to-failure sensor measurements from turbofan engines un
 
 ## 2. Sensor Data Analysis
 
-Analyze sensor measurements to understand:
+This module analyzes engine sensor measurements to understand machine behavior and degradation.
+
+### Analysis
 
 - Sensor trends
 - Sensor distributions
-- Correlations
+- Sensor correlations
 - Engine degradation patterns
 - Important sensors
 
-Visualizations include:
+### Visualizations
 
 - Line plots
 - Histograms
 - Box plots
 - Correlation heatmaps
+- Sensor trend charts
 
 ---
 
@@ -77,14 +85,14 @@ Visualizations include:
 
 Machine Learning models are used to predict whether an engine is approaching a failure condition.
 
-Possible models:
+### Models
 
 - Logistic Regression
 - Random Forest
 - Gradient Boosting
 - XGBoost
 
-Evaluation metrics:
+### Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -96,12 +104,13 @@ Evaluation metrics:
 
 ## 4. Failure Type Classification
 
-This module identifies different failure/degradation conditions using machine learning classification techniques.
+This module identifies different failure or degradation conditions using machine learning classification techniques.
 
-Techniques include:
+### Techniques
 
 - Feature engineering
 - Classification models
+- Model training
 - Model evaluation
 - Confusion matrix
 - Classification report
@@ -110,16 +119,16 @@ Techniques include:
 
 ## 5. Remaining Useful Life (RUL) Prediction
 
-The system estimates how many operating cycles remain before the engine reaches its failure condition.
+The system estimates the remaining operating cycles before an engine reaches its failure condition.
 
-Models can include:
+### Models
 
 - Linear Regression
 - Random Forest Regressor
 - Gradient Boosting
 - XGBoost Regressor
 
-Evaluation metrics:
+### Evaluation Metrics
 
 - MAE
 - RMSE
@@ -129,79 +138,86 @@ Evaluation metrics:
 
 ## 6. Anomaly Detection
 
-Detect unusual engine behavior from sensor measurements.
+This module detects unusual or abnormal engine behavior from sensor measurements.
 
-Techniques:
+### Techniques
 
 - Isolation Forest
 - Statistical analysis
 - Sensor threshold analysis
 
-Output:
+### Output
 
-- Normal condition
-- Anomalous condition
+- Normal Condition
+- Anomalous Condition
 
 ---
 
 ## 7. Time-Series Analysis
 
-Analyze engine sensor values over operating cycles.
+This module analyzes sensor values over operating cycles to understand degradation patterns.
 
-This helps identify:
+### Analysis Includes
 
 - Degradation trends
 - Sensor behavior
 - Performance changes
 - Failure progression
+- Operating cycle analysis
 
 ---
 
 ## 8. Feature Engineering & Model Explainability
 
-Important features are created from raw sensor data.
+Important features are created from raw sensor data to improve machine learning performance.
 
-Techniques include:
+### Feature Engineering
 
 - Rolling statistics
 - Lag features
 - Sensor trends
+- Moving averages
 - Feature selection
 
-Model explainability can be performed using:
+### Model Explainability
 
 - Feature importance
 - SHAP
 - Model interpretation
+- Important sensor identification
 
 ---
 
 ## 9. ML Model / API Integration
 
-The trained machine learning model is integrated with an API.
+The trained machine learning models are integrated with an API for prediction.
 
-Possible technology:
+### Technologies
 
 - Python
 - FastAPI
 - Scikit-learn
 - Joblib
 
-The API can receive sensor information and return:
+### API Predictions
+
+The API can provide:
 
 - Failure prediction
 - RUL prediction
 - Anomaly status
+- Machine health status
 
 ---
 
-## 10. Monitoring & ML Dashboard
+#  10. Monitoring & ML Dashboard
 
-An interactive dashboard is developed using **Streamlit**.
+An interactive monitoring dashboard is developed using **Streamlit**.
 
 ### Dashboard Sections
 
 - Overview
+- Engine Selection
 - Machine Health
 - Sensor Analysis
 - Failure Prediction
@@ -214,24 +230,75 @@ An interactive dashboard is developed using **Streamlit**.
 
 ---
 
-# 🛠️ Technologies Used
+# Live Dashboard
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- XGBoost
-- SHAP
-- FastAPI
-- Streamlit
-- Joblib
-- Jupyter Notebook
+The project includes an interactive AI-based engine health monitoring dashboard built using Streamlit.
+
+🔗 **Live Dashboard:**  
+https://restore-ware-knives-nail.trycloudflare.com
+
+### Dashboard Features
+
+- Engine Selection
+- Engine Health Monitoring
+- Current Cycle Tracking
+- Machine Status
+- Failure Prediction
+- RUL Prediction
+- Sensor Analysis
+- Anomaly Detection
+- Time-Series Monitoring
+- Interactive Visualizations
 
 ---
 
-# 📁 Project Structure
+#  Technologies Used
+
+### Programming
+
+- Python
+
+### Data Analysis
+
+- Pandas
+- NumPy
+
+### Data Visualization
+
+- Matplotlib
+- Seaborn
+
+### Machine Learning
+
+- Scikit-learn
+- XGBoost
+
+### Explainable AI
+
+- SHAP
+
+### API
+
+- FastAPI
+- Uvicorn
+
+### Dashboard
+
+- Streamlit
+
+### Model Management
+
+- Joblib
+
+### Development Environment
+
+- Jupyter Notebook
+- Git
+- GitHub
+
+---
+
+# Project Structure
 
 ```text
 Industrial-Machine-Intelligence-Predictive-Maintenance/
@@ -261,3 +328,5 @@ Industrial-Machine-Intelligence-Predictive-Maintenance/
 ├── requirements.txt
 │
 └── README.md
+## Author
+Vaishnavi
